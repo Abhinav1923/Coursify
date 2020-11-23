@@ -49,7 +49,7 @@ h1 {
 }
 
 h2 {
-  font-size: 20px;
+  font-size: 30px;
   font-weight: 700;
   color: rgb(65, 63, 64);
 }
@@ -569,6 +569,13 @@ a.navbar-brand {
   padding-top: 100px;
 }
 
+#section-10 .main_container #small_container:nth-child(1) {
+  padding-right: 150px;
+}
+#section-10 .main_container #small_container:nth-child(2) {
+  padding-left: 150px;
+}
+
 #section-10 .main_container {
   flex-wrap: wrap;
   padding-top: 40px;
@@ -576,6 +583,10 @@ a.navbar-brand {
 
 #section-10 h2 {
   font-size: 50px;
+}
+
+.gap {
+  margin-top: 120px;
 }
 
 #section-10 #card-container {
@@ -629,7 +640,7 @@ a.navbar-brand {
 }
 
 #section-10 .carousel {
-  border: 3px solid rgb(9, 255, 0);
+  /* border: 3px solid rgb(9, 255, 0); */
   height: 60%;
   width: 100%;
   display: flex;
@@ -642,7 +653,15 @@ a.navbar-brand {
   bottom: -80px;
 }
 
+/* ///////////////////////////////  Media quiery //////////////////////// */
+
 @media only screen and (max-width: 400px) {
+  .navbar-toggler:focus,
+  .navbar-toggler:hover {
+    text-decoration: none;
+    outline: none;
+  }
+
   a.navbar-brand {
     margin: 0 auto;
   }
@@ -668,12 +687,16 @@ a.navbar-brand {
   }
 
   h2 {
-    font-size: 30px;
+    font-size: 20px;
     text-align: center;
   }
 
   h2 + p {
     font-size: 15px;
+  }
+
+  #arrow {
+    top: 0px;
   }
 
   #frame_box {
@@ -690,11 +713,11 @@ a.navbar-brand {
   }
 
   #section-3 {
-    min-height: 70vh;
+    min-height: 65vh;
   }
 
   #section-3 h1 {
-    margin-top: 110px;
+    margin-top: 70px;
   }
 
   #section-3 h2,
@@ -704,6 +727,10 @@ a.navbar-brand {
 
   #section-3 .section_content_box {
     width: 100%;
+  }
+
+  #section-3 .main_container {
+    padding-top: 0px;
   }
 
   #section-3 .inner_container img {
@@ -765,10 +792,9 @@ a.navbar-brand {
     width: 100%;
   }
 
-  /* #section-3 #play-btn {
-    height: 40px;
-    width: 40px;
-  } */
+  #section-4 .main_container {
+    padding-top: 0px;
+  }
 
   #section-4 #circle {
     height: 150px;
@@ -779,7 +805,11 @@ a.navbar-brand {
     height: 140px;
   }
   #section-4 .circle_container {
-    height: 250px;
+    height: initial;
+  }
+
+  .circle_container {
+    height: initial;
   }
 
   #section-4 svg {
@@ -808,7 +838,7 @@ a.navbar-brand {
     height: initial;
   }
 
-  .container_box {
+  #section-4 .container_box {
     width: 90%;
     height: 410px;
     padding: 30px 25px;
@@ -826,6 +856,12 @@ a.navbar-brand {
 
   #section-6 button {
     margin-top: 0px;
+  }
+
+  #section-6 .container_box {
+    width: 90%;
+    height: 285px;
+    padding: 30px 25px;
   }
 
   #section-7 h2 {
@@ -882,5 +918,61 @@ a.navbar-brand {
 
   #section-10 h2 {
     font-size: 30px;
+  }
+
+  #section-10 #circle img {
+    display: block;
+  }
+
+  #section-10 .main_container #small_container:nth-child(1) {
+    padding-right: 0px;
+  }
+  #section-10 .main_container #small_container:nth-child(2) {
+    padding-left: 0px;
+  }
+
+  #section-10 #small_container {
+    flex-direction: column;
+  }
+
+  #section-10 #circle {
+    height: 100px;
+    width: 100px;
+    margin: 20px 20px 20px 0px;
+  }
+  #section-10 #circle img {
+    height: 100px;
+  }
+
+  #section-10 #card-container:nth-child(2n-1) #circle {
+    margin: 20px 0px 20px 20px;
+  }
+  #section-10 #card-container:nth-child(2n-1) {
+    flex-direction: row-reverse;
+  }
+
+  #section-10 .main_container {
+    padding-top: 0px;
+  }
+
+  #section-10 #quote {
+    height: 95px;
+    width: 220px;
+  }
+
+  #section-10 #quote h2 {
+    font-size: 18px;
+  }
+  #section-10 #quote p {
+    font-size: 12px;
+    text-align: center;
+  }
+
+  #section-10 #small_container {
+    padding-top: 0px;
+  }
+
+  #section-10 .gap {
+    margin-top: 50px;
   }
 }
