@@ -612,6 +612,7 @@ a.navbar-brand {
 @media only screen and (max-width: 400px) {
   .main_container {
     flex-direction: column;
+    padding-top: 50px;
   }
   .inner_container {
     height: 40vh;
@@ -621,6 +622,14 @@ a.navbar-brand {
   h1 {
     text-align: center;
     font-size: 30px;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+
+  h2 + p {
+    font-size: 15px;
   }
 
   #frame_box {
@@ -636,11 +645,61 @@ a.navbar-brand {
     display: none;
   }
 
+  #section-3 {
+    min-height: 70vh;
+  }
+
   #section-3 h1 {
     margin-top: 110px;
   }
 
+  #section-3 h2,
+  #section-3 p {
+    text-align: center;
+  }
+
+  #section-3 .section_content_box {
+    width: 100%;
+  }
+
   #section-3 .inner_container img {
     display: none;
+  }
+
+  #section-3 .section_img_box {
+    display: none;
+  }
+
+  .section3_box {
+    height: 80px;
+  }
+
+  #section-3 #img-container {
+    display: none;
+  }
+
+  #section-4 #circle {
+    height: 150px;
+    width: 150px;
+  }
+
+  #section-4 #circle img {
+    height: 140px;
+  }
+  #section-4 .circle_container {
+    height: 250px;
+  }
+
+  #section-4 svg {
+    transform: rotate(90deg);
+  }
+
+  #section-4 p {
+    font-size: 14px;
+    margin-bottom: 0px;
+  }
+
+  #section-4 #small_container {
+    padding-top: 0px;
   }
 }
