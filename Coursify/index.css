@@ -192,6 +192,10 @@ a.navbar-brand {
   height: 45px;
 }
 
+.navbar-nav .nav-link {
+    text-align: center;
+}
+
 /* ======================================= first section ===================================================== */
 
 #frame_box {
