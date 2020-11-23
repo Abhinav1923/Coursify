@@ -1,0 +1,1041 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- ///////////// bootstrap //////////////// -->
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+    />
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- /////////////////////////////////////////////////// -->
+
+    <!-- ///////////// google fonts //////////////// -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- /////////////////////////////////////////////////// -->
+
+    <link rel="stylesheet" href="index.css" />
+    <title>Coursify</title>
+    <link
+      rel="shortcut icon"
+      href="/Images/title-logo.png"
+    />
+  </head>
+  <body>
+    <!-- ==================================== Scroll to top ================================ -->
+
+    <button onclick="topFunction()" id="ScrolltoTop" title="Go to top">
+      <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-up-circle-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+        <path fill-rule="evenodd" d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-7.5 3.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707V11.5z"/>
+      </svg>
+    </button>
+
+    <!-- ======================================= Navbar ======================================= -->
+    <nav class="navbar navbar-expand-lg sticky">
+      <a class="navbar-brand" href="#">
+        <img src="/Images/logo.PNG" height="45px" />Coursify</a
+      >
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link" href="#"
+              >Live Classes <span class="sr-only">(current)</span></a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Video Library</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Course</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Book</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Board</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Exam</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- ==================================== 1st section (Cover page)===================================== -->
+    <section id="section-1">
+    <div class="main_container">
+      <div class="inner_container" id="home_head">
+        <h1>
+          Clarify your <span>doubts</span> <br />
+          in your language.
+        </h1>
+        <button type="button" class="btn btn-primary button">
+          <svg
+            width="1.1em"
+            height="1.2em"
+            viewBox="0 0 16 16"
+            class="bi bi-download"
+            fill="currentColor"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z"
+            />
+            <path
+              fill-rule="evenodd"
+              d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z"
+            />
+          </svg>
+          Ask your doubt now
+        </button>
+      </div>
+
+      <div class="inner_container">
+        <div id="frame_box">
+          <div id="play_btn" class="center">
+            <svg
+              width="1em"
+              height="1em"
+              viewBox="0 0 16 16"
+              class="bi bi-play-fill"
+              fill="currentColor"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M11.596 8.697l-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z"
+              />
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+    </section>
+
+    <!-- =================================== 2nd section (Cards) ========================================= -->
+    <section id="section2">
+    <div class="main_container" >
+      <div class="card mb-3">
+        <div class="row no-gutters">
+          <div class="col-md-4">
+            <div class="icon_box" id="card1">
+              <img src="/Images/notepad.png" height="80px" />
+            </div>
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title">40,000+</h5>
+              <p class="card-text">
+                <small class="text-muted">Doubts cleared</small>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card mb-3">
+        <div class="row no-gutters">
+          <div class="col-md-4">
+            <div class="icon_box" id="card2">
+              <img src="/Images/certificate.png" height="80px" />
+            </div>
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title">20+</h5>
+              <p class="card-text">
+                <small class="text-muted">State Boards</small>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card mb-3">
+        <div class="row no-gutters">
+          <div class="col-md-4">
+            <div class="icon_box" id="card3">
+              <img src="/Images/video-chat.png" height="80px" />
+            </div>
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title">1,000,000+</h5>
+              <p class="card-text">
+                <small class="text-muted">Video Lectures</small>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card mb-3">
+        <div class="row no-gutters">
+          <div class="col-md-4">
+            <div class="icon_box" id="card4">
+              <img src="/Images/ebook.png" height="80px" />
+            </div>
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title">5,000+</h5>
+              <p class="card-text">
+                <small class="text-muted">Books Covered</small>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </section>
+
+    <!-- ============================== 3rd section (Solve your doubts)============================== -->
+    <section id="section-3">
+    <div class="main_container">
+      <div class="inner_container" id="home_head">
+        <h1>Solve your doubts <span>faster.</span></h1>
+        <div class="section3_box">
+          <div class="section_img_box">
+            <img src="/Images/globe.PNG" height="85px" />
+          </div>
+          <div class="section_content_box">
+            <h2>Accessible everywhere</h2>
+            <p>Access to quality education anytime, anywhere</p>
+          </div>
+        </div>
+        <div class="section3_box">
+          <div class="section_img_box">
+            <img src="/Images/1millionVideos.PNG" height="85px" />
+          </div>
+          <div class="section_content_box">
+            <h2>1 million+ videos</h2>
+            <p>Unlimited access to video solutions</p>
+          </div>
+        </div>
+      </div>
+      <div class="inner_container">
+        <img src="/Images/Capture.PNG" height="350px" />
+      </div>
+    </div>
+    </section>
+
+    <!-- ================================ 4th section (How it works?) =================================== -->
+    <section id="section-4">
+    <div id="small_container">
+      <h2><span>How it works?</span></h2>
+    </div>
+    <div class="main_container">
+      <br />
+      <div class="circle_container">
+        <div id="circle">
+          <img src="/Images/circle1.PNG" height="180px" />
+        </div>
+        <p>Have a doubt?</p>
+      </div>
+      <div id="arrow">
+        <svg
+          width="3em"
+          height="3em"
+          viewBox="0 0 16 16"
+          class="bi bi-chevron-right"
+          fill="currentColor"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"
+          />
+        </svg>
+      </div>
+      <div class="circle_container">
+        <div id="circle">
+          <img src="/Images/circle2.PNG" height="180px" />
+        </div>
+        <p>
+          <span style="color: rgb(28, 28, 156)">
+            Type your question<br />
+            OR <br />
+            Upload an image
+          </span>
+        </p>
+      </div>
+      <div id="arrow">
+        <svg
+          width="3em"
+          height="3em"
+          viewBox="0 0 16 16"
+          class="bi bi-chevron-right"
+          fill="currentColor"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"
+          />
+        </svg>
+      </div>
+      <div class="circle_container">
+        <div id="circle">
+          <img src="/Images/circle3.PNG" height="180px" />
+        </div>
+        <p>Get your solution!</p>
+      </div>
+    </div>
+
+    <div id="small_container">
+      <button type="button " class="btn btn-primary button">
+        Clarify your doubts now!
+      </button>
+    </div>
+
+    </section>
+
+    <!-- ================================= 5th section (Live classes) ================================== -->
+    <div id="small_container">
+      <h1><span>Live</span> classes</h1>
+    </div>
+    <section id="section-3">
+    <div class="main_container">
+      <div class="inner_container">
+        <div class="container_box">
+          
+          <div class="small_container-box">
+            <div class="left_form">
+              <h3>What is the heart made of?</h3>
+              <p>Choose the correct option</p>
+              <div id="left_form_box"></div>
+              <div id="left_form_box"></div>
+              <div id="left_form_box"></div>
+              <img src="/Images/form_box_logo.PNG" />
+            </div>
+            <div class="right_form">
+              <div id="right_form_box"></div>
+              <div id="right_form_box"></div>
+            </div>
+          </div>
+            <div id="play_btn" class="center">
+               <svg
+              width="1em"
+              height="1em"
+              viewBox="0 0 16 16"
+              class="bi bi-play-fill"
+              fill="currentColor"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M11.596 8.697l-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z"
+              />
+            </svg>
+            </div>
+        </div>
+      </div>
+
+      <div class="inner_container">
+        <div class="LiveClassBoxRight_container">
+          <div id="right_container_box">
+            <div id="right_container_imgbox">
+              <img src="/Images/globe.PNG" height="70px" />
+            </div>
+            <div id="right_container_contentbox">
+              <h2>Accessible everywhere</h2>
+              <p style="font-size: 18px">
+                Access to quality education anytime, anywhere
+              </p>
+            </div>
+          </div>
+          <div id="right_container_box">
+            <div id="right_container_imgbox">
+              <img src="/Images/expert_teachers.PNG" height="70px" />
+            </div>
+            <div id="right_container_contentbox">
+              <h2>Expert Teachers</h2>
+              <p style="font-size: 18px">Unlimited access to video solutions</p>
+            </div>
+          </div>
+          <div id="right_container_box">
+            <div id="right_container_imgbox">
+              <img src="/Images/1millionVideos.PNG" height="70px" />
+            </div>
+            <div id="right_container_contentbox">
+              <h2>Interactive Sessions</h2>
+              <p style="font-size: 18px">
+                Small groups for maximum student-teacher interaction.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div id="small_container">
+      <h2><span>FIRST CLASS FREE</span></h2>
+    </div>
+    <div id="small_container">
+      <button type="button " class="btn btn-primary button">
+        Book a class now!
+      </button>
+    </div>
+    </section>
+
+    <!--  ===============================  6th section (JEE & NEET) =============================== -->
+
+    <section id="section-6">
+    <div id="small_container" style="margin-top: 60px">
+      <h1><span>JEE</span> Mains &amp; Advance Preparations</h1>
+    </div>
+    <div class="main_container">
+      <div
+        id="carouselExampleIndicators"
+        class="carousel slide"
+        data-ride="carousel"
+      >
+        <ol class="carousel-indicators">
+          <li
+            data-target="#carouselExampleIndicators"
+            data-slide-to="0"
+            class="active"
+          ></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div id="slider_container">
+              <div class="inner_container">
+                <div class="container_box">
+                  <div class="small_container-box">
+                    <img src="/Images/online-class.PNG" alt="" height="100%" />
+                  </div>
+                </div>
+              </div>
+              <div class="inner_container">
+                <div id="content-box">
+                  <h2><span>Micro concept videos</span></h2>
+                  <p>
+                    Find multilingual video explanations important and frequent
+                    confused concepts from every subjects.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div id="slider_container">
+              <div class="inner_container">
+                <div class="container_box">
+                  <div class="small_container-box">
+                    <img src="/Images/online-class.PNG" alt="" height="100%" />
+                  </div>
+                </div>
+              </div>
+              <div class="inner_container">
+                <div id="content-box">
+                  <h2><span>Micro concept videos</span></h2>
+                  <p>
+                    Find multilingual video explanations important and frequent
+                    confused concepts from every subjects.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div id="slider_container">
+              <div class="inner_container">
+                <div class="container_box">
+                  <div class="small_container-box">
+                    <img src="/Images/online-class.PNG" alt="" height="100%" />
+                  </div>
+                </div>
+              </div>
+              <div class="inner_container">
+                <div id="content-box">
+                  <h2><span>Micro concept videos</span></h2>
+                  <p>
+                    Find multilingual video explanations important and frequent
+                    confused concepts from every subjects.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <a
+          class="carousel-control-prev"
+          href="#carouselExampleIndicators"
+          role="button"
+          data-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a
+          class="carousel-control-next"
+          href="#carouselExampleIndicators"
+          role="button"
+          data-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+    </div>
+
+    <div id="small_container" style="margin-top: 80px">
+      <button type="button " class="btn btn-primary button">
+        Prepare for JEE now!
+      </button>
+    </div>
+    
+
+    <!-- ========================== NEET  ======================== -->
+
+    <div id="small_container" style="margin-top: 60px">
+      <h1><span>NEET</span> Preparations</h1>
+    </div>
+    <div class="main_container">
+      <div
+        id="carouselExampleIndicators"
+        class="carousel slide"
+        data-ride="carousel"
+      >
+        <ol class="carousel-indicators">
+          <li
+            data-target="#carouselExampleIndicators"
+            data-slide-to="0"
+            class="active"
+          ></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div id="slider_container">
+              <div class="inner_container">
+                <div class="container_box">
+                  <div class="small_container-box">
+                    <img src="/Images/online-class.PNG" alt="" height="100%" />
+                  </div>
+                </div>
+              </div>
+              <div class="inner_container">
+                <div id="content-box">
+                  <h2><span>Micro concept videos</span></h2>
+                  <p>
+                    Find multilingual video explanations important and frequent
+                    confused concepts from every subjects.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div id="slider_container">
+              <div class="inner_container">
+                <div class="container_box">
+                  <div class="small_container-box">
+                    <img src="/Images/online-class.PNG" alt="" height="100%" />
+                  </div>
+                </div>
+              </div>
+              <div class="inner_container">
+                <div id="content-box">
+                  <h2><span>Micro concept videos</span></h2>
+                  <p>
+                    Find multilingual video explanations important and frequent
+                    confused concepts from every subjects.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div id="slider_container">
+              <div class="inner_container">
+                <div class="container_box">
+                  <div class="small_container-box">
+                    <img src="/Images/online-class.PNG" alt="" height="100%" />
+                  </div>
+                </div>
+              </div>
+              <div class="inner_container">
+                <div id="content-box">
+                  <h2><span>Micro concept videos</span></h2>
+                  <p>
+                    Find multilingual video explanations important and frequent
+                    confused concepts from every subjects.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <a
+          class="carousel-control-prev"
+          href="#carouselExampleIndicators"
+          role="button"
+          data-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a
+          class="carousel-control-next"
+          href="#carouselExampleIndicators"
+          role="button"
+          data-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+    </div>
+
+    <div id="small_container" style="margin-top: 80px">
+      <button type="button " class="btn btn-primary button">
+        Prepare for NEET now!
+      </button>
+    </div>
+    </section>
+
+    <!--  ================================= 7th section (Subjects) ====================================  -->
+    <section id="section-7">
+    <div id="small_container" style="margin-top: 100px">
+      <h2 style="font-size: 50px"><span>Explore the subject with us!</span></h2>
+    </div>
+    <div class="main_container">
+      <div class="card">
+        <img src="/Images/calculator.PNG" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <p class="card-text"><h3><span>Maths</span></h3></p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="/Images/neutron.PNG" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <p class="card-text"><h3><span>Physics</span></h3></p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="/Images/acid.PNG" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <p class="card-text"><h3><span>Chemistry</span></h3></p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="/Images/biology.PNG" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <p class="card-text"><h3><span>Biology</span></h3></p>
+        </div>
+      </div>
+      </div>
+      <!-- ------------------------------- hidden ----------------------------------- -->
+      <div id="view_more">
+      <div class="main_container">
+      <div class="card">
+        <img src="/Images/calculator.PNG" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <p class="card-text"><h3><span>Maths</span></h3></p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="/Images/neutron.PNG" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <p class="card-text"><h3><span>Physics</span></h3></p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="/Images/acid.PNG" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <p class="card-text"><h3><span>Chemistry</span></h3></p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="/Images/biology.PNG" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <p class="card-text"><h3><span>Biology</span></h3></p>
+        </div>
+      </div>
+    </div>
+    </div>
+    <div id="small_container">
+    <h5 id="hide"> View all </h5>
+    </div>
+    </section>
+
+    <!-- ===================================== 8th section ===================================== -->
+    <section id="section-8">
+    <div id="small_container" style="margin-top: 100px">
+      <h2 style="font-size: 50px"><span>Free access</span> to 5000+ books</h2>
+    </div>
+    <div id="small_container">
+      <h2></h2>
+      <p style="text-align:center;">Get access to virtual library of 5000+ text books <br> and refrence books of various stateboards and competitive exams.</p>
+    </div>
+
+    <div class="main_container">
+       <div class="card">
+        <img src="/Images/hc_verma.PNG" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <p class="card-text"><h3><span>HC Verma</span></h3></p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="/Images/ncert.PNG" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <p class="card-text"><h3><span>NCERT</span></h3></p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="/Images/kc-sinha.PNG" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <p class="card-text"><h3><span>KC Sinha</span></h3></p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="/Images/errorless.PNG" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <p class="card-text"><h3><span>Errorless</span></h3></p>
+        </div>
+      </div>
+       <div class="card">
+        <img src="/Images/tata mcgraw hill.PNG" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <p class="card-text"><h3><span>Tata McGraw Hill</span></h3></p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="/Images/rd shrma.PNG" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <p class="card-text"><h3><span>RD Shrma</span></h3></p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="/Images/pradeep's.PNG" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <p class="card-text"><h3><span>Pradeep's</span></h3></p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="/Images/sl arora.PNG" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <p class="card-text"><h3><span>SL Arora</span></h3></p>
+        </div>
+      </div>
+           <div class="card">
+        <img src="/Images/maths.PNG" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <p class="card-text"><h3><span>Maths</span></h3></p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="/Images/calculator.PNG" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <p class="card-text"><h3><span>Maths</span></h3></p>
+        </div>
+      </div>
+    </div>
+      </section>
+
+      <!-- ====================================== section 9 =================================== -->
+        <section id="section-9">
+          <div id="small_container" style="margin-top: 100px">
+      <h2 style="font-size: 50px"><span>State Boards</span></h2>
+    </div>
+    <div id="small_container">
+      <h2></h2>
+      <p style="text-align:center;">Learn your board syllabus from the best teachers with us.</p>
+    </div>
+
+    <div class="main_container">
+       <div class="card">
+        <img src="/Images/maharastra.PNG" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <p class="card-text"><h3><span>Maharastra</span></h3></p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="/Images/punjab.PNG" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <p class="card-text"><h3><span>Punjab</span></h3></p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="/Images/andhra pradesh.PNG" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <p class="card-text"><h3><span>Andhra Pradesh</span></h3></p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="/Images/west bengal.PNG" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <p class="card-text"><h3><span>West Bengal</span></h3></p>
+        </div>
+      </div>
+       <div class="card">
+        <img src="/Images/uttar pradesh.PNG" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <p class="card-text"><h3><span>Uttar Pradesh</span></h3></p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="/Images/kerela.PNG" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <p class="card-text"><h3><span>Kerela</span></h3></p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="/Images/rajasthan.PNG" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <p class="card-text"><h3><span>Rajasthan</span></h3></p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="/Images/gujarat.PNG" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <p class="card-text"><h3><span>Gujarat</span></h3></p>
+        </div>
+      </div>
+           <div class="card">
+        <img src="/Images/tamil nadu.PNG" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <p class="card-text"><h3><span>Tamil Nadu</span></h3></p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="/Images/madhya pradesh.PNG" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <p class="card-text"><h3><span>Madhya Pradesh</span></h3></p>
+        </div>
+      </div>
+    </div>
+      </section>
+
+      <!-- ======================================== section 10 =================================== -->
+      <section id="section-10">
+           <div id="small_container" style="margin-top: 100px">
+      <h2 style="font-size: 50px">Meet our expert tutors</h2>
+    </div>
+
+    <div class="main_container">
+      <div id="small_container" style="padding-right: 100px;">
+        <div id="card-container">
+          <div id="circle">
+            <img src="/Images/quote-image.png" alt="">
+          </div>
+            <div id="quote">
+              <h2><span>Shivani Arora</span></h2>
+              <p>Lorem ipsum ahds</p>
+              <p>bhclLKODKJFN</p>
+              <p>NZJKC,LD;DOODE</p>
+            </div>
+          
+        </div>
+        <div id="card-container">
+          <div id="circle">
+            <img src="/Images/quote-image.png" alt="">
+          </div>
+          <div id="quote">
+             <h2><span>Shivani Arora</span></h2>
+              <p>Lorem ipsum ahds</p>
+              <p>bhclLKODKJFN</p>
+              <p>NZJKC,LD;DOODE</p>
+          </div>
+        </div>
+      </div>
+      <div id="small_container" style="padding-left: 100px;">
+       <div id="card-container">
+         <div id="circle">
+           <img src="/Images/quote-image.png" alt="">
+         </div>
+         <div id="quote">
+            <h2><span>Shivani Arora</span></h2>
+              <p>Lorem ipsum ahds</p>
+              <p>bhclLKODKJFN</p>
+              <p>NZJKC,LD;DOODE</p>
+         </div>
+       </div>
+        <div id="card-container">
+          <div id="circle">
+            <img src="/Images/quote-image.png" alt="">
+          </div>
+          <div id="quote">
+             <h2><span>Shivani Arora</span></h2>
+              <p>Lorem ipsum ahds</p>
+              <p>bhclLKODKJFN</p>
+              <p>NZJKC,LD;DOODE</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+             <div id="small_container" style="margin-top: 120px">
+      <h2 style="font-size: 45px">See what our students have to say</h2>
+    </div>
+    <div class="main_container" style="padding-top: 40px;">
+          <div class="inner_container">
+        <div id="frame_box">
+          <div id="play_btn" class="center">
+            <svg
+              width="1em"
+              height="1em"
+              viewBox="0 0 16 16"
+              class="bi bi-play-fill"
+              fill="currentColor"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M11.596 8.697l-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z"
+              />
+            </svg>
+          </div>
+        </div>
+      </div>
+           <div class="inner_container">
+          <div
+            id="carouselExampleIndicators"
+            class="carousel slide"
+            data-ride="carousel"
+          >
+            <ol class="carousel-indicators">
+              <li
+                data-target="#carouselExampleIndicators"
+                data-slide-to="0"
+                class="active"
+              ></li>
+              <li
+                data-target="#carouselExampleIndicators"
+                data-slide-to="1"
+              ></li>
+              <li
+                data-target="#carouselExampleIndicators"
+                data-slide-to="2"
+              ></li>
+            </ol>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div id="card-container">
+                  <div id="circle">
+                    <img src="/Images/quote-image.png" alt="" />
+                  </div>
+                  <div id="quote">
+                    <h2><span>Shivani Arora</span></h2>
+                    <p>Lorem ipsum ahds</p>
+                    <p>bhclLKODKJFN</p>
+                    <p>NZJKC,LD;DOODE</p>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div id="card-container">
+                  <div id="circle">
+                    <img src="/Images/quote-image.png" alt="" />
+                  </div>
+                  <div id="quote">
+                    <h2><span>Shivani Arora</span></h2>
+                    <p>Lorem ipsum ahds</p>
+                    <p>bhclLKODKJFN</p>
+                    <p>NZJKC,LD;DOODE</p>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div id="card-container">
+                  <div id="circle">
+                    <img src="/Images/quote-image.png" alt="" />
+                  </div>
+                  <div id="quote">
+                    <h2><span>Shivani Arora</span></h2>
+                    <p>Lorem ipsum ahds</p>
+                    <p>bhclLKODKJFN</p>
+                    <p>NZJKC,LD;DOODE</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <a
+              class="carousel-control-prev"
+              href="#carouselExampleIndicators"
+              role="button"
+              data-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a
+              class="carousel-control-next"
+              href="#carouselExampleIndicators"
+              role="button"
+              data-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div id="small_container" style="margin: 80px 0px 40px 0px;">
+      <button type="button " class="btn btn-primary button">
+        Prepare for NEET now!
+      </button>
+    </div>
+    </section>
+  </body>
+
+
+  <script>
+    /////////////////// view more //////////////
+
+      $(document).ready(function(){
+      $("#hide").click(function(){
+
+        $("#view_more").toggle();
+        });
+    });
+    ///////////////////////////////////////////////
+
+    //////////////// Back to top ///////////////////
+              //Get the button
+      var mybutton = document.getElementById("ScrolltoTop");
+
+      // When the user scrolls down 20px from the top of the document, show the button
+      window.onscroll = function() {scrollFunction()};
+
+      function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+          mybutton.style.display = "block";
+        } else {
+          mybutton.style.display = "none";
+        }
+      }
+      // When the user clicks on the button, scroll to the top of the document
+      function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+      }
+    ////////////////////////////////////////////////////
+  </script>
+</html>
